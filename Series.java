@@ -19,7 +19,8 @@ public : double sum(int n)
 int main()
 {
     gfg g;
-    int n = 5;
+ int n = Integer.parseInt(System.getenv("val"));
+    //int n = 5;
     cout << "Sum is " << g.sum(n);
     return 0;
 }
