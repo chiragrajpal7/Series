@@ -3,7 +3,7 @@ import java.io.*;
 
      
    
-    static double sum(int n)
+    static double Series(int n)
     {
       double i, s = 0.0;
       for (i = 1; i <= n; i++)
