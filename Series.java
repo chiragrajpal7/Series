@@ -1,27 +1,23 @@
-
-#include <iostream>
-using namespace std;
+import java.io.*;
  
 
-class gfg
-{
      
-public : double sum(int n)
-{
-    double i, s = 0.0;
-    for (i = 1; i <= n; i++)
-    s = s + 1/i;
-    return s;
+   
+    static double sum(int n)
+    {
+      double i, s = 0.0;
+      for (i = 1; i <= n; i++)
+          s = s + 1/i;
+      return s;
+    }
+  
+    
+    
+    public static void main(String args[])
+    {
+     int n = Integer.parseInt(System.getenv("val"));
+        int n = 5;
+        System.out.printf("Sum is %f", sum(n));
+         
+    }
 }
-};
- 
-
-int main()
-{
-    gfg g;
- int n = Integer.parseInt(System.getenv("val"));
-    //int n = 5;
-    cout << "Sum is " << g.sum(n);
-    return 0;
-}
- 
