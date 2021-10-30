@@ -1,9 +1,10 @@
 import java.io.*;
  
-
+class Series {
      
-   
-    static double Series(int n)
+    // Function to return sum of
+    // 1/1 + 1/2 + 1/3 + ..+ 1/n
+    static double sum(int n)
     {
       double i, s = 0.0;
       for (i = 1; i <= n; i++)
@@ -12,11 +13,10 @@ import java.io.*;
     }
   
     
-    
+    // Driven Program
     public static void main(String args[])
     {
-     int n = Integer.parseInt(System.getenv("val"));
-        int n = 5;
+        int n = Integer.parseInt(System.getenv("val"));
         System.out.printf("Sum is %f", sum(n));
          
     }
